@@ -78,3 +78,28 @@ Used for:
 
 https://github.com/user-attachments/assets/52814b62-4a82-487e-953c-631889eebbf3
 
+**(4).BONUS FEATURES IMPLEMENTED:**
+
+-> Workout Plan Tabs:
+
+React-based dynamic content switching.
+
+-> Cart Handling (Add to Cart → Toast):
+
+Context API + state.
+
+-> Membership Upgrade System:
+
+Dynamic price change + success animation.
+
+-> Attendance Dashboard:
+
+SVG donut visualization + percentage calc.
+
+-> Floating Common Services Panel:
+
+CSS animation + React state toggling.
+
+-> Fully Responsive UI:
+
+Custom media queries, no external framework.
