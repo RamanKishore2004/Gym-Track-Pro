@@ -1,0 +1,206 @@
+
+{
+  "plans": [
+    {
+      "id": 1,
+      "name": "Basic",
+      "price": "₹999",
+      "features": ["Gym Access", "Locker", "1 PT Session"]
+    },
+    {
+      "id": 2,
+      "name": "Pro",
+      "price": "₹1999",
+      "features": ["All Basic Features", "Unlimited PT", "Diet Plan"]
+    },
+    {
+      "id": 3,
+      "name": "Elite",
+      "price": "₹2999",
+      "features": ["Everything in Pro", "Sauna", "Premium Support"]
+    }
+  ],
+
+  "trainers": [
+    {
+      "id": 1,
+      "name": "Mathew.K",
+      "specialty": "Strength Coach",
+      "experience": "6 yrs",
+      "tags": ["HIIT", "Strength"]
+    },
+    {
+      "id": 2,
+      "name": "Benjamine.S",
+      "specialty": "Cardio Trainer",
+      "experience": "4 yrs",
+      "tags": ["Cardio", "Flexibility"]
+    },
+    {
+      "id": 3,
+      "name": "Angelina.V",
+      "specialty": "Yoga Instructor",
+      "experience": "5 yrs",
+      "tags": ["Yoga", "Endurance"]
+    }
+  ],
+
+  "classes": [
+    {
+      "id": 1,
+      "name": "HIIT Blast",
+      "trainer": "Mathew.K",
+      "time": "6:00 AM",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 2,
+      "name": "Morning Yoga",
+      "trainer": "Angelina.V",
+      "time": "7:00 AM",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 3,
+      "name": "Strength Training",
+      "trainer": "Benjamine.S",
+      "time": "8:00 AM",
+      "difficulty": "Medium"
+    }
+  ],
+
+  "gallery": ["gallery1.jpg", "gallery2.jpg", "gallery3.jpg"],
+
+  "supplements": [
+    {
+      "id": 1,
+      "name": "Whey Protein",
+      "price": "₹1499",
+      "size": "1 kg",
+      "desc": "Post-workout protein powder.",
+      "features": ["24g protein", "Low sugar", "BCAA rich"]
+    },
+    {
+      "id": 2,
+      "name": "Creatine Monohydrate",
+      "price": "₹799",
+      "size": "300 g",
+      "desc": "Strength & power booster.",
+      "features": ["Micronized", "5g per serving", "Unflavored"]
+    },
+    {
+      "id": 3,
+      "name": "Multivitamin",
+      "price": "₹499",
+      "size": "60 tabs",
+      "desc": "Daily vitamins & minerals.",
+      "features": ["Immune support", "Energy", "General health"]
+    }
+  ],
+
+  "membershipPlans": [
+    {
+      "id": 1,
+      "duration": "1 Month",
+      "price": "₹999",
+      "desc": "Perfect for short-term fitness goals.",
+      "features": ["Gym Access", "Locker", "1 PT Session"]
+    },
+    {
+      "id": 2,
+      "duration": "6 Months",
+      "price": "₹4999",
+      "desc": "Great value for consistent training.",
+      "features": ["Gym Access", "Locker", "Diet Plan", "Monthly PT"]
+    },
+    {
+      "id": 3,
+      "duration": "12 Months",
+      "price": "₹8999",
+      "desc": "Best for long-term transformations.",
+      "features": ["Gym Access", "Unlimited PT", "Diet Plan", "Sauna Access"]
+    }
+  ],
+
+  "userMembership": {
+    "status": "Active",
+    "plan": "6 Months",
+    "expiry": "2026-03-15"
+  },
+
+  "attendance": {
+    "student": {
+      "roll": "221BCT001",
+      "name": "John Doe",
+      "photo": "/Attendence.jpg",
+      "counts": {
+        "present": 92,
+        "absent": 7
+      }
+    }
+  },
+
+  "workoutPlans": {
+    "week": [
+      {
+        "day": "Monday",
+        "focus": "Chest & Triceps",
+        "exercises": [
+          { "name": "Bench Press", "sets": "4 x 6-8", "notes": "Progressive overload" },
+          { "name": "Incline Dumbbell Press", "sets": "3 x 8-10" },
+          { "name": "Cable Fly", "sets": "3 x 12-15" },
+          { "name": "Tricep Dips", "sets": "3 x 8-12" }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "focus": "Back & Biceps",
+        "exercises": [
+          { "name": "Deadlift", "sets": "4 x 4-6" },
+          { "name": "Lat Pulldown", "sets": "3 x 8-10" },
+          { "name": "Seated Row", "sets": "3 x 8-10" },
+          { "name": "Hammer Curls", "sets": "3 x 10-12" }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "focus": "Legs",
+        "exercises": [
+          { "name": "Squats", "sets": "4 x 6-8" },
+          { "name": "Leg Press", "sets": "3 x 10-12" },
+          { "name": "Romanian Deadlift", "sets": "3 x 8-10" },
+          { "name": "Calf Raises", "sets": "4 x 12-15" }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "focus": "Shoulders & Abs",
+        "exercises": [
+          { "name": "Overhead Press", "sets": "4 x 6-8" },
+          { "name": "Lateral Raises", "sets": "3 x 12-15" },
+          { "name": "Face Pulls", "sets": "3 x 12-15" },
+          { "name": "Plank", "sets": "3 x 60s" }
+        ]
+      },
+      {
+        "day": "Friday",
+        "focus": "Full Body / Conditioning",
+        "exercises": [
+          { "name": "Kettlebell Swings", "sets": "4 x 12" },
+          { "name": "Push-ups", "sets": "3 x AMRAP" },
+          { "name": "Medicine Ball Slams", "sets": "3 x 12" },
+          { "name": "Farmer Walk", "sets": "3 x 40m" }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "focus": "Mobility & Recovery",
+        "exercises": [
+          { "name": "Yoga Flow", "sets": "30 min" },
+          { "name": "Foam Rolling", "sets": "10-15 min" },
+          { "name": "Light Cardio", "sets": "20 min easy" }
+        ]
+      }
+    ]
+  }
+}
