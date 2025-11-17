@@ -1,6 +1,6 @@
 **(1). PROJECT-SETUP:**
 
-<img width="857" height="730" alt="Screenshot 2025-11-17 192220" src="https://github.com/user-attachments/assets/45fc2752-62d4-4eb8-a406-1e5e01398666" />
+<img width="575" height="956" alt="image" src="https://github.com/user-attachments/assets/3fc797ba-6995-4960-af42-bb9f72277f9b" />
 
 **(2). TECH-STACK USED:**
 
