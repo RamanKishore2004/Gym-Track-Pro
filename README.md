@@ -6,70 +6,75 @@
 
 **GymTrack Pro**
 
-**Frontend Framework**
+**Frontend Framework:**
 
-React.js (with Hooks) – component-based UI
+-React.js (with Hooks) – component-based UI
 
-Vite – lightning-fast bundler & dev server (instead of CRA)
+-Vite – lightning-fast bundler & dev server (instead of CRA)
 
-**Language**
+**Language:**
 
-JavaScript (ES6+)
+-JavaScript (ES6+)
 
-**Styling**
+**Styling:**
 
-Pure CSS (Custom styles.css)
+-Pure CSS (Custom styles.css)
 
-CSS Variables (:root{--accent:#2e8b57}) for theme control
+-CSS Variables (:root{--accent:#2e8b57}) for theme control
 
-Responsive Design using custom media queries
+-Responsive Design using custom media queries
 
-Flexbox + CSS Grid for layouts
+-Flexbox + CSS Grid for layouts
 
-**State Management**
+**State Management:**
 
-React useState + useContext
+-React useState + useContext
 
 Used for:
 
-Workout filter tabs
+-Workout filter tabs
 
-Membership plan selection
+-Membership plan selection
 
-Cart system (Add to cart → toast message)
+-Cart system (Add to cart → toast message)
 
-Attendance card data
+-Attendance card data
 
-**Routing / Navigation**
+**Routing / Navigation:**
 
-Anchor-based navigation (href="#schedule")
+-Anchor-based navigation (href="#schedule")
 
-Smooth scrolling via browser behavior
+-Smooth scrolling via browser behavior
 
-**Data Handling**
+**Data Handling:**
 
-Local JSON file (mock-data.json) used instead of a backend
+-Local JSON file (mock-data.json) used instead of a backend
 
-Plans
+-Plans
 
-Supplements
+-Supplements
 
-Trainers
+-Trainers
 
-Workout schedule
+-Workout schedule
 
-Attendance
+-Attendance
 
-**Charts / Visual**
+**Charts / Visual:**
 
-Custom SVG Donut Charts (no external chart library)
+-Custom SVG Donut Charts (no external chart library)
 
-Attendance donut
+-Attendance donut
 
-Present/Absent indicators
+-Present/Absent indicators
 
-**Tools & Environment**
+**Tools & Environment:**
 
-Node.js + npm – package and build management
+-Node.js + npm – package and build management
 
-VS Code – editor
+-VS Code – editor
+
+**(3).SCREEN RECORDING OF GYM-TRACK PRO:**
+
+https://github.com/user-attachments/assets/52814b62-4a82-487e-953c-631889eebbf3
+
