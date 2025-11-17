@@ -460,7 +460,7 @@ body{margin:0;background:var(--bg);color:#17201a}
   border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
-  transition: background .2s ease;
+  transition: background 0.2s ease;
 }
 .big-donut-wrap {
   margin-bottom: 10px;
@@ -496,4 +496,134 @@ body{margin:0;background:var(--bg);color:#17201a}
 
 .logout-btn:hover {
   background: #c9302c;       /* darker hover red */
+}
+
+/* -----------------------
+   RESPONSIVE RULES
+   Append this to bottom of styles.css
+   ----------------------- */
+
+/* Small tweaks for large desktops */
+@media (max-width: 1200px) {
+  .container { padding: 36px 18px; max-width: 1000px; }
+  .hero h1 { font-size: 42px; }
+  .hero-media img { width: 340px; }
+  .grid { gap: 18px; }
+}
+
+/* Tablet / landscape phones */
+@media (max-width: 900px) {
+  .container { padding: 28px 16px; max-width: 900px; }
+
+  /* Header: reduce gaps and hide some nav items if needed */
+  .header-inner { gap: 12px; }
+  .nav { display: none; } /* hide desktop nav on narrow screens; use hamburger or rely on CTA buttons */
+
+  /* Header actions stack and shrink */
+  .header .header-actions,
+  .header-actions { display: flex; gap: 8px; align-items:center; }
+
+  .btn { padding: 8px 12px; font-size: 14px; }
+  .nav-btn { display: none; } /* optional: hide big nav CTAs to save space */
+
+  /* Hero becomes column */
+  .hero-inner { flex-direction: column; align-items:flex-start; gap: 18px; padding-bottom: 12px; }
+  .hero h1 { font-size: 32px; }
+  .hero-media img { width: 100%; max-width: 420px; }
+
+  /* Grids go to 2 columns */
+  .plans-grid,
+  .trainers-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Gallery smaller imgs */
+  .gallery-item img { height: 200px; border-radius: 16px; }
+
+  /* Corner panel move up or to bottom center */
+  .corner-panel { bottom: 220px; left: 14px; padding-top: 90px; }
+  .corner-card { width: 300px; }
+
+  /* Workout tabs wrap better */
+  .workout-tabs { gap: 10px; }
+  .tab { min-width: 100px; }
+}
+
+/* Small phones */
+@media (max-width: 720px) {
+  .container { padding: 20px 12px; max-width: 100%; }
+
+  /* Header: show simple actions and center logo */
+  .header { padding: 12px 12px; }
+  .header-inner { align-items:center; gap:8px; }
+  .logo { font-size: 20px; }
+
+  /* show header actions vertically if many */
+  .header .header-actions { gap:8px; }
+
+  /* Hero */
+  .hero { padding: 18px 0; }
+  .hero h1 { font-size: 26px; }
+  .hero .lead { font-size: 14px; }
+  .hero-media img { width: 92%; max-width: 420px; }
+
+  /* Grids -> single column */
+  .plans-grid,
+  .trainers-grid,
+  .gallery-grid { grid-template-columns: 1fr; }
+
+  .gallery-item img { height: 180px; border-radius: 14px; }
+
+  /* Card padding shrink */
+  .card { padding: 14px; border-radius: 12px; }
+
+  /* Membership: stack and full width */
+  .membership-current, .membership-upgrade { width: 100%; box-shadow: none; border-radius: 10px; padding: 14px; }
+  .membership-select { font-size: 15px; padding: 10px; }
+
+  /* Attendance: center items vertically */
+  .attendance-card.card { display: block; padding: 12px; }
+  .att-center { text-align: center; }
+  .att-right { margin-top: 16px; display: flex; justify-content: center; }
+
+  /* Corner panel bottom center for phones */
+  .corner-panel { left: 50%; transform: translateX(-50%); bottom: 18px; padding-top: 0; }
+  .corner-card { width: 94vw; max-width: 94vw; }
+
+  /* Donut / avatar sizing */
+  .big-donut-wrap svg { width: 140px !important; height: 140px !important; }
+  .avatar-lg { width: 84px !important; height: 84px !important; }
+
+  /* Compact workout day card */
+  .workout-day.card { padding: 12px; }
+}
+
+/* Extra small phones */
+@media (max-width: 420px) {
+  .hero h1 { font-size: 22px; }
+  .hero .lead { font-size: 13px; }
+  .btn { padding: 8px 10px; font-size: 13px; border-radius: 10px; }
+  .corner-toggle { width: 46px; height: 46px; border-radius: 10px; display: grid; place-items: center; font-size: 20px; }
+  .corner-card { width: 92vw; left: 4vw; }
+  .gallery-item img { height: 160px; }
+  .plan-card img { height: 140px; }
+
+  /* small text tweaks */
+  .section-title { font-size: 18px; }
+  .plan-card .price { font-size: 18px; }
+}
+
+/* Utility rules for responsive hiding/showing if you want to toggle nav with JS */
+.header .nav.mobile-show { display: flex; flex-direction: column; gap: 10px; position: absolute; left: 12px; top: 64px; background: var(--card); padding: 12px; border-radius: 12px; box-shadow: 0 12px 30px rgba(0,0,0,0.08); z-index: 50; }
+
+/* Accessibility: increase hit area on small screens */
+.btn, .filter, .tab { min-height: 40px; }
+
+/* ensure footer paddings shrink */
+.site-footer { padding: 14px 12px; }
+
+/* ensure schedule list wraps nicely */
+.schedule-list { gap: 10px; }
+
+/* gallery hover on mobile: disable scale to avoid overflow */
+@media (hover: none) {
+  .gallery-item img:hover { transform: none; }
 }
